@@ -1,0 +1,5 @@
+*.md
+CHANGELOG
+node_modules
+test
+cache

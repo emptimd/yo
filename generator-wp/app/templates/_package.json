@@ -1,0 +1,25 @@
+{
+  "name": "<%= _.slugify(project_name) %>",
+  "version": "<%= pkg.version %>",
+  "description": "Wp Project",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-newer": "latest",
+    "time-grunt": "latest"
+  },
+  "dependencies": {
+    "time-grunt": "latest"
+  },
+  "keywords": [
+    "<%= _.slugify(appname) %>"
+  ],
+  "license": "MIT"
+}

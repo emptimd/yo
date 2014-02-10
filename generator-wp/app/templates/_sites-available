@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+	ServerAdmin <%= pkg.author.name %>
+	ServerName <%= _.slugify(project_name) %>
+	DocumentRoot /home/user/sites/<%= appname %>
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride ALL
+	</Directory>
+	<Directory /home/user/sites/<%= appname %>>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride ALL
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	LogLevel warn
+
+</VirtualHost>

@@ -1,0 +1,15 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "<%= pkg.version %>",
+  "dependencies": {
+    "normalize-css": "latest",
+    <% if (bootstrap) {%>
+    "bootstrap": "latest",
+    <% } %>
+  	"jquery": "~2.1.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "~2.1.0"
+  }
+}
